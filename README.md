@@ -41,6 +41,7 @@ Rancher sees is a reviewed pull request.
 | `oan-apisix-gateway` | [charts/oan-apisix-gateway](charts/oan-apisix-gateway) | APISIX gateway, Ingress Controller and Redis | `apisix`, see [the guide](docs/apisix-gateway.md) |
 | `oan-logging` | [charts/oan-logging](charts/oan-logging) | Node log agent, OTel gateway, Loki and Grafana | `oan-logging` / `observability`, see [the guide](docs/logging.md) |
 | `farmer-registry-dashboard`, `cropsown-registry-dashboard`, `livestock-registry-dashboard` | [addons/registry-dashboards](addons/registry-dashboards) | Per-registry dashboard UI and API | per registry |
+| `oan-dashboards` | [oan_dashboards `helm/oan-dashboards`](https://github.com/Centre-for-Open-Societal-Systems/oan_dashboards/tree/develop/helm/oan-dashboards); copy for staging in [addons/oan-dashboards](addons/oan-dashboards) | Shared A2C and Grievance dashboards; its develop pipeline publishes each build to `repository/develop/` | `oan-dashboards` / `commons` |
 
 Farmer, Crop Sown and Livestock were **refactor candidates** whose charts failed
 every render at a promotion gate until their refactors were accepted; all three

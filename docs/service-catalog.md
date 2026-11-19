@@ -124,7 +124,11 @@ tar -tzf charts/openg2p-commons-services/charts/openg2p-consent-manager-1.0.2.tg
 
 Commons Base remains upstream and separate. Connectors, the existing shared
 `oan-dashboards` release and unrelated OAN applications are outside these six
-charts. Existing independent Helm owners are retained. See the
+charts. Existing independent Helm owners are retained. `oan-dashboards` is owned by
+[oan_dashboards](https://github.com/Centre-for-Open-Societal-Systems/oan_dashboards): its develop
+pipeline pushes `eoan/oan_dashboards/oan-dashboards` and publishes the chart, image pinned by digest, to
+`repository/develop/`; [addons/oan-dashboards](../addons/oan-dashboards) is the copy staging is delivered
+from (`scripts/ci/deliver_staging_oan_dashboards.sh`). See the
 [readiness table](readiness.md), [URL migration](dev-urls.md) and
 [Rancher guide](rancher-dev.md) for manual use.
 
